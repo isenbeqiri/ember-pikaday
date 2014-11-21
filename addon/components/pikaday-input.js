@@ -29,6 +29,8 @@ export default Ember.Component.extend({
     this.get('pikaday').setDate(this.get('value'), true);
   }.on('didInsertElement'),
 
+  pikaday: null,
+  
   teardownPikaday: function() {
     this.get('pikaday').destroy();
   }.on('willDestroyElement'),
